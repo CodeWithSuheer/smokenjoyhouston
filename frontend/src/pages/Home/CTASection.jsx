@@ -1,7 +1,7 @@
 const CTASection = () => {
   return (
     <>
-      <section className="bg-gray-900 py-20">
+      <section className=" py-20">
         <div className="relative mx-auto max-w-6xl ">
           <div
             className="rounded-xl p-1"

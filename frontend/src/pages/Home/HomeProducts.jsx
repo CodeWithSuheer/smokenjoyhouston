@@ -51,17 +51,14 @@ const HomeProducts = () => {
 
   return (
     <>
-      <section className="py-10 px-5 sm:px-0 bg-white min-h-screen">
+      <section className="py-10 px-5 sm:px-0 min-h-screen">
         <div className="max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto">
           {/* HEADER */}
           <div className="flex items-center justify-between">
             <div className="heading">
-              <h2 className="text-3xl font-bold tracking-wide">Our Products</h2>
-              <p className="bg-gray-300 h-0.5 mt-2"></p>
+              <h2 className="text-3xl font-bold tracking-wide">Our Shop</h2>
+              <p className="bg-[#C29168] h-[0.20rem] mt-2"></p>
             </div>
-            <button className="px-10 py-2 mt-5 font-medium border-2 border-black hover:bg-[#252525] hover:text-white transition-colors">
-              VIEW ALL
-            </button>
           </div>
 
           {/* PRODUCTS */}
@@ -79,7 +76,7 @@ const HomeProducts = () => {
                     </div>
                     <div className="mt-3 flex justify-between">
                       <div>
-                        <h3 className="text-lg font-semibold text-gray-50 cursor-pointer">
+                        <h3 className="text-lg font-semibold text-black cursor-pointer">
                           {product.name}
                         </h3>
                       </div>

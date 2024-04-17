@@ -1,7 +1,7 @@
 const Content = () => {
   return (
     <>
-      <section className="py-10 px-5 sm:px-0 bg-gray-600 min-h-screen">
+      <section className="py-10 px-5 sm:px-0 min-h-screen">
         <div className="max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto">
           {/* HEADER */}
           <div className="flex items-center justify-between">
@@ -13,9 +13,6 @@ const Content = () => {
               GO TO BLOGS
             </button>
           </div>
-
-
-          
         </div>
       </section>
     </>

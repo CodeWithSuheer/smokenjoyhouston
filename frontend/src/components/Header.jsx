@@ -1,6 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import Marquee from "react-fast-marquee";
 import "./Components.css";
+
+const TextData = () => {
+  return (
+    <p className="mx-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliq Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Aliq
+    </p>
+  );
+};
 
 const Header = () => {
   const [responsiveMenu, setResponsiveMenu] = useState();
@@ -49,13 +59,23 @@ const Header = () => {
 
   return (
     <>
+      {/* MARQUEE */}
+      <div className="header bg-[#252525] text-white py-2 text-sm">
+        <Marquee speed={70}>
+          <TextData />
+        </Marquee>
+      </div>
+
+      {/* NAVBAR */}
       <nav className={`md:text-sm bg-white border-b border-gray-300 shadow-lg`}>
-        <div className="items-center px-4 max-w-full mx-auto md:flex md:px-16">
+        <div className="items-center px-4 max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto md:flex md:px-0">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="/">
-              <h2 className="poppins text-gray-800 dark:text-gray-200 text-lg font-semibold uppercase">
-                Smoken Joy Houston
-              </h2>
+              <img
+                className="w-36"
+                src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/smokeNjoy_logo222.png?v=1713462364"
+                alt=""
+              />
             </Link>
 
             <div className="md:hidden">

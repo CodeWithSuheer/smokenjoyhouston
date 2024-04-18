@@ -6,6 +6,7 @@ import Contact from "./pages/contact/Contact";
 import Accessories from "./pages/accessories/Accessories";
 import Header from "./components/Header";
 import HomeProducts from "./pages/Home/HomeProducts";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </>
   );

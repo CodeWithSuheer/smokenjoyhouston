@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import HomeProducts from "./pages/Home/HomeProducts";
 import Footer from "./components/Footer";
 import "./App.css";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
         <Footer />
       </BrowserRouter>

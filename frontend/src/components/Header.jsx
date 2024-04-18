@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import "./Components.css";
 
@@ -13,23 +13,10 @@ const TextData = () => {
 };
 
 const Header = () => {
+  const navigate = useNavigate();
   const [responsiveMenu, setResponsiveMenu] = useState();
   // const [isDropDownOpen, setIsDropDownOpen] = useState(false);
   const dropdownRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -54,6 +41,11 @@ const Header = () => {
 
   const handleLinkClick = () => {
     setResponsiveMenu(false);
+    window.scroll(0, 0);
+  };
+
+  const handleContact = () => {
+    navigate("/contact");
     window.scroll(0, 0);
   };
 
@@ -251,7 +243,7 @@ const Header = () => {
           </div>
 
           <div className="hidden md:inline-block">
-            <button className="navbar_button">
+            <button onClick={handleContact} className="navbar_button">
               <span>CONTACT US</span>
             </button>
           </div>

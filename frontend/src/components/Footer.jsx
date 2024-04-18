@@ -49,11 +49,11 @@ const Footer = () => {
                   Contact Us
                 </Link>
                 <Link
-                  to="/blogs"
+                  to="/privacy-policy"
                   onClick={handleMoveToTop}
                   className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
                 >
-                  Blogs
+                  Privacy Policy
                 </Link>
               </div>
             </div>

@@ -58,14 +58,14 @@ const HomeProducts = () => {
           <div className="">
             <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-6 lg:max-w-full lg:px-0">
               <div className="mt-4 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-                {products.map((product, index) => (
+                {products?.map((product, index) => (
                   <motion.div
                     variants={fadeInAnimationVariants}
                     initial="initial"
                     whileInView="animate"
                     viewport={{ once: true }}
                     custom={index}
-                    key={product.id}
+                    key={index}
                     className="group relative mt-1"
                   >
                     <div className="aspect-h-1 aspect-w-1 w-full border border-gray-300 overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80">

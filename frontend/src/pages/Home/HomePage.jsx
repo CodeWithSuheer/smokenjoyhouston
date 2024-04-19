@@ -22,7 +22,7 @@ const HomePage = () => {
         <HomeSlider />
 
         {/* --------- CATEGORY SECTION ----------- */}
-        <section className="py-10 px-5 sm:px-0">
+        <section className="py-4 sm:py-8 px-4 sm:px-4 xl:px-0">
           <div className="max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto">
             <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
               {/* LEFT SIDE */}
@@ -33,14 +33,16 @@ const HomePage = () => {
                   className="h-full w-full object-cover object-center lg:h-full lg:w-full transition duration-500 group-hover:scale-105"
                 />
 
-                <div className="content absolute px-16">
-                  <h2 className="mb-3 text-3xl font-bold">Vaper Just Ice</h2>
+                <div className="content absolute px-5 sm:px-16">
+                  <h2 className="mb-3 text-2xl sm:text-3xl font-bold">
+                    Vaper Just Ice
+                  </h2>
                   <p className="mb-3 max-w-xs">
                     It is a long established fact that content of a page when
                     looking.
                   </p>
 
-                  <button className="px-7 py-2 mt-5 font-medium border-2 border-white hover:bg-gray-100 hover:text-gray-800 transition-colors">
+                  <button className="px-7 py-2 mt-3 sm:mt-5 font-medium border-2 border-white hover:bg-gray-100 hover:text-gray-800 transition-colors">
                     SHOP NOW
                   </button>
                 </div>
@@ -54,8 +56,10 @@ const HomePage = () => {
                   className="h-full w-full object-cover object-center lg:h-full lg:w-full transition duration-500 group-hover:scale-105"
                 />
 
-                <div className="content absolute px-16">
-                  <h2 className="mb-3 text-3xl font-bold">Pen Vaper</h2>
+                <div className="content absolute px-5 sm:px-16">
+                  <h2 className="mb-3 text-2xl sm:text-3xl font-bold">
+                    Pen Vaper
+                  </h2>
                   <p className="mb-3 max-w-xs">
                     It is a long established fact that content of a page when
                     looking.

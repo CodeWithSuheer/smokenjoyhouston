@@ -37,13 +37,29 @@ const Carousel = () => {
               alt="banner_img"
             />
 
-            <div className="content absolute z-50 top-1/2 left-[21rem] transform -translate-x-1/2 -translate-y-1/2 text-white">
-              <h2 className="mb-6 text-5xl font-semibold">SmokeNJoy</h2>
-              <p className="mb-8 max-w-md text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-                ipsum?
+            <div className="content hidden sm:block absolute z-50 top-1/2 md:left-[21rem] transform -translate-x-1/2 -translate-y-1/2 text-white">
+              <h2 className="mb-6 text-xl md:text-5xl font-semibold">
+                SMOKENJOY
+              </h2>
+              <p className="mb-8 w-full md:max-w-md text-lg">
+                Discover Houston's premier destination for smoke and vape
+                products! From premium e-liquids to top-of-the- line vape
+                devices, we've got everything you need.
               </p>
 
+              <Link
+                to="shop"
+                spy={true}
+                smooth={true}
+                duration={700}
+                type="button"
+                className="px-7 py-2 font-medium border-2 border-white hover:bg-gray-100 hover:text-gray-800 transition-colors cursor-pointer"
+              >
+                <span>SHOP NOW</span>
+              </Link>
+            </div>
+
+            <div className="content sm:hidden block absolute z-50 top-[25rem] left-[10rem] transform -translate-x-1/2 -translate-y-1/2 text-white">
               <Link
                 to="shop"
                 spy={true}

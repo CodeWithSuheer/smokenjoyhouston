@@ -1,32 +1,31 @@
 const CTASection = () => {
   return (
     <>
-      <section className=" py-20">
-        <div className="relative mx-auto max-w-6xl ">
-          <div
-            className="rounded-xl p-1"
-            style={{
-              backgroundImage:
-                "linear-gradient(to right bottom, rgb(79, 70, 229) 0%, rgb(165, 56, 164) 50%, rgb(220, 38, 38) 100%)",
-            }}
-          >
-            <div className="rounded-lg bg-black/80 backdrop-blur">
-              <div className="flex w-full flex-wrap items-center justify-between gap-4 px-8 py-20 sm:px-16 lg:flex-nowrap">
-                <div className="lg:max-w-xl">
-                  <h2 className="block w-full pb-2 bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
-                    THE BEST E-LIQUID PRICES
-                  </h2>
-                  <p className="my-4 bg-transparent font-medium leading-relaxed tracking-wide text-gray-400">
-                    Great value UK made e-liquid. $13.33 per 10ml bottle!
-                    Available this week!
-                  </p>
-                </div>
-                <div className="flex flex-wrap items-center justify-center gap-6 ">
-                  <button className="bg-violet-600 text-white button-text flex items-center justify-center whitespace-nowrap rounded-md transition-all duration-300 px-8 py-3 text-xs sm:text-sm">
-                    Contact Us
-                  </button>
-                </div>
-              </div>
+      <section className="lg:pt-2 lg:pb-16 lg:flex lg:justify-center">
+        <div className="overflow-hidden bg-white dark:bg-gray-900 lg:mx-8 lg:flex lg:max-w-6xl lg:w-full lg:shadow-md lg:rounded-xl">
+          <div className="lg:w-1/2">
+            <div
+              className="h-64 bg-cover lg:h-full"
+              style={{
+                backgroundImage: 'url(\'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80\')'
+              }}
+            />
+          </div>
+
+          <div className="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2 bg-[#252525]">
+            <h2 className="text-2xl font-semibold text-white md:text-3xl">
+              Build Your New{' '}
+              <span className="text-blue-500">
+                Idea
+              </span>
+            </h2>
+            <p className="mt-4 text-white">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.                Quidem modi reprehenderit vitae exercitationem aliquid dolores ullam temporibus enim expedita aperiam                mollitia iure consectetur dicta tenetur, porro consequuntur saepe accusantium consequatur.
+            </p>
+            <div className="inline-flex w-full mt-6 sm:w-auto">
+              <button className="px-7 py-2 font-medium border-2 border-white hover:bg-gray-100 text-white hover:text-gray-800 transition-colors">
+                SHOP NOW
+              </button>
             </div>
           </div>
         </div>

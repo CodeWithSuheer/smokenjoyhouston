@@ -37,6 +37,7 @@ const Carousel = () => {
               alt="banner_img"
             />
 
+            {/* TEXT FOR DESKTOP VIEW */}
             <div className="content hidden sm:block absolute z-50 top-1/2 md:left-[21rem] transform -translate-x-1/2 -translate-y-1/2 text-white">
               <h2 className="mb-6 text-xl md:text-5xl font-semibold">
                 SMOKENJOY
@@ -59,7 +60,8 @@ const Carousel = () => {
               </Link>
             </div>
 
-            <div className="content sm:hidden block absolute z-50 top-[25rem] left-[10rem] transform -translate-x-1/2 -translate-y-1/2 text-white">
+            {/* TEXT FOR MOBILE VIEW */}
+            <div className="content sm:hidden absolute z-50 left-1/2 bottom-10 transform -translate-x-1/2 text-white">
               <Link
                 to="shop"
                 spy={true}

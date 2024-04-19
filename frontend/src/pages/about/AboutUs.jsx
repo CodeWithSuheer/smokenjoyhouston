@@ -17,17 +17,17 @@ const AboutUs = () => {
 
       {/* ----------- IMAGE & TEXT SECTION -----------  */}
       <section className="bg-[#f5f5f5]">
-        <div className="max-w-6xl mx-auto flex px-5 py-20 md:flex-row flex-col items-center">
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <div className="max-w-6xl mx-auto flex px-4 py-10 sm:py-20 md:flex-row flex-col items-center">
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mb-7 md:mb-0">
             <img
-              className="object-cover object-center rounded-2xl"
+              className="w-full object-cover object-center"
               alt="hero"
               src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/cigarette-8547965_1920.jpg?v=1713473308"
             />
           </div>
 
           <div className="lg:flex-grow md:w-1/2 xl:pl-16 lg:pl-20 md:pl-16 flex flex-col text-left">
-            <h1 className="mb-5 font-bold max-w-md text-3xl md:text-4xl text-[#272727]">
+            <h1 className="mb-3 sm:mb-5 font-bold max-w-md text-3xl md:text-4xl text-[#272727]">
               About SmokEnjoy
             </h1>
             <p className="mb-6 leading-relaxed">
@@ -90,9 +90,9 @@ const AboutUs = () => {
 
       {/* ----------- IMAGE & TEXT SECTION -----------  */}
       <section className="bg-[#f5f5f5]">
-        <div className="max-w-6xl mx-auto flex px-5 py-20 md:flex-row flex-col items-center">
+        <div className="max-w-6xl mx-auto flex px-5 py-10 sm:py-20 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 xl:pr-16 lg:pr-20 md:pr-16 flex flex-col text-left">
-            <h1 className="mb-5 font-bold max-w-md text-3xl md:text-4xl text-[#272727]">
+            <h1 className="mb-3 sm:mb-5 font-bold max-w-md text-3xl md:text-4xl text-[#272727]">
               About SmokEnjoy
             </h1>
             <p className="mb-6 leading-relaxed">
@@ -111,9 +111,9 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mb-7 md:mb-0">
             <img
-              className="object-cover object-center rounded-2xl"
+              className="w-full object-cover object-center"
               alt="hero"
               src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/hookan-by-table-side-view.jpg?v=1713473315"
             />

@@ -9,6 +9,7 @@ import HomeProducts from "./pages/Home/HomeProducts";
 import Footer from "./components/Footer";
 import "./App.css";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import {Toaster} from "react-hot-toast";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
+      <Toaster/>
     </>
   );
 }

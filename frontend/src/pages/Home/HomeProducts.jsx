@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { categories } from "../../Data/index";
 
 // fadeInAnimationVariants
 const fadeInAnimationVariants = {
@@ -16,31 +17,6 @@ const fadeInAnimationVariants = {
 };
 
 const HomeProducts = () => {
-  const products = [
-    {
-      name: "E-Liquids",
-      image:
-        "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/FRYD-60ML3.jpg?v=1713464190",
-    },
-
-    {
-      name: "E-Cigrattes",
-      image:
-        "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/Adalya-Premium-Hookah-Tobacco-1-300x300.jpg?v=1713464541",
-    },
-
-    {
-      name: "Disposible Vape",
-      image:
-        "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/JUST-REDS-E-LIQUID-BY-ALT-ZERO-100M_1.jpg?v=1713464542",
-    },
-
-    {
-      name: "Hookah & Sheesha",
-      image:
-        "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/KHALIL-MAMOON-TRIMETAL-ZOHARIA3_1.jpg?v=1713464541",
-    },
-  ];
 
   return (
     <>
@@ -59,7 +35,7 @@ const HomeProducts = () => {
           <div className="products">
             <div className="mx-auto max-w-2xl py-4 lg:py-6 sm:px-6 sm:py-6 lg:max-w-full lg:px-5 xl:px-0">
               <div className="mt-4 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                {products?.map((product, index) => (
+                {categories?.map((product, index) => (
                   <motion.div
                     variants={fadeInAnimationVariants}
                     initial="initial"

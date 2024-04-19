@@ -138,7 +138,7 @@ const Blogs = () => {
             <div className="space-y-5 md:space-y-8">
               <div className="space-y-3">
                 <h2 className="text-2xl font-bold md:text-3xl dark:text-white">
-                  Announcing a free plan for small teams
+                  Ohms Too Low on a Vape: What Does It Mean?
                 </h2>
                 <p className="text-lg text-gray-800 dark:text-neutral-200">
                   At preline, our mission has always been focused on bringing

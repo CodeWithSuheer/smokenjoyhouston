@@ -5,10 +5,10 @@ import AboutUs from "./pages/about/AboutUs";
 import Contact from "./pages/contact/Contact";
 import Accessories from "./pages/accessories/Accessories";
 import Header from "./components/Header";
-import HomeProducts from "./pages/Home/HomeProducts";
 import Footer from "./components/Footer";
-import "./App.css";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import Products from "./pages/products/Products";
+import "./App.css";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/products" element={<HomeProducts />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/accessories" element={<Accessories />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/aboutus" element={<AboutUs />} />

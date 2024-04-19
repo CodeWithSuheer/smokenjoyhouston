@@ -60,7 +60,7 @@ const Header = () => {
 
       {/* NAVBAR */}
       <nav className={`md:text-sm bg-white border-b border-gray-300 shadow-lg`}>
-        <div className="items-center px-4 max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto md:flex md:px-0">
+        <div className="items-center px-4 max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto md:flex md:px-6 xl:px-0">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="/">
               <img
@@ -108,7 +108,7 @@ const Header = () => {
               responsiveMenu ? "block" : "hidden"
             }`}
           >
-            <ul className="text-center justify-center items-center space-y-8 md:flex md:space-x-8 md:space-y-0">
+            <ul className="text-center justify-center items-center space-y-8 md:flex md:space-x-6 lg:space-x-8 md:space-y-0">
               {/* <li
                 className="text-gray-800 hover:text-[#1A73E8]"
                 ref={dropdownRef}

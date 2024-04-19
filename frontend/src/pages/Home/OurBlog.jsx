@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const OurBlog = () => {
   return (
     <>
@@ -10,18 +8,10 @@ const OurBlog = () => {
             <h2 className="text-3xl font-bold tracking-wide">Our Blog</h2>
             <p className="bg-[#C29168] h-[0.20rem] mt-2"></p>
           </div>
-          {/* GO TO BLOGS BUTTON */}
-          <Link
-            to="/blogs"
-            onClick={() => window.scroll(0, 0)}
-            className="px-10 py-2 mt-5 font-medium border-2 border-black hover:bg-[#252525] hover:text-white transition-colors"
-          >
-            GO TO BLOG
-          </Link>
         </div>
 
         {/* BLOG SECTION */}
-        <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-10 py-16 sm:px-6 sm:py-6 px-0">
+        <div className="mt-2 grid sm:grid-cols-2 lg:grid-cols-3 gap-10 py-5 sm:px-6 sm:py-6 px-0">
           {/* CARD 1 */}
           <article className="group relative overflow-hidden shadow transition hover:shadow-lg">
             <img

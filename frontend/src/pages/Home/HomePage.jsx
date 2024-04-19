@@ -8,7 +8,6 @@ import TopBrands from "./TopBrands";
 import HomeSlider from "./HomeSlider";
 import OurBlog from "./OurBlog";
 import "./Home.css";
-import CTASection from "./CTASection";
 
 const HomePage = () => {
   // AOS
@@ -91,7 +90,7 @@ const HomePage = () => {
         <OurBlog />
 
         {/* --------- CTA SECTION ----------- */}
-        <CTASection />
+        {/* <CTASection /> */}
 
         {/* --------- LOACTION ----------- */}
         <section>
@@ -101,11 +100,10 @@ const HomePage = () => {
               className="border-none w-full min-h-[70vh]"
               allowFullScreen=""
               loading="lazy"
-            // referrerpolicy="no-referrer-when-downgrade"
+              // referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </section>
-
       </main>
     </>
   );

@@ -30,7 +30,7 @@ const Carousel = () => {
     <div className="relative mx-0 px-0 sm:px-0 h-[70vh] overflow-hidden">
       <Slider ref={sliderRef} {...settings}>
         {data.map((data, index) => (
-          <div key={index} className="w-full h-[70vh] relative">
+          <div key={index} className="w-full h-[70vh] relative cursor-pointer">
             <img
               className="h-full w-full object-cover"
               src={data.img}
@@ -42,7 +42,7 @@ const Carousel = () => {
               <h2 className="mb-6 text-xl md:text-5xl font-semibold">
                 SMOKENJOY
               </h2>
-              <p className="mb-8 w-full md:max-w-md text-lg">
+              <p className="mb-8 w-full md:max-w-md text-md">
                 Discover Houston's premier destination for smoke and vape
                 products! From premium e-liquids to top-of-the- line vape
                 devices, we've got everything you need.

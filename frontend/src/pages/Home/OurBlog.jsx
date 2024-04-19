@@ -1,4 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 const OurBlog = () => {
+  const navigate = useNavigate();
+  const handleBlogPage = () => {
+    navigate("/blogs");
+    window.scroll(0, 0);
+  };
   return (
     <>
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-16 mx-auto">
@@ -13,7 +20,10 @@ const OurBlog = () => {
         {/* BLOG SECTION */}
         <div className="mt-2 grid sm:grid-cols-2 lg:grid-cols-3 gap-10 py-5 sm:px-6 sm:py-6 px-0">
           {/* CARD 1 */}
-          <article className="group relative overflow-hidden shadow transition hover:shadow-lg">
+          <article
+            onClick={handleBlogPage}
+            className="group relative overflow-hidden shadow transition hover:shadow-lg cursor-pointer"
+          >
             <img
               alt=""
               src="https://wpbingosite.com/wordpress/vapas/wp-content/uploads/2017/04/Image-10-370x460.jpg"
@@ -38,7 +48,10 @@ const OurBlog = () => {
           </article>
 
           {/* CARD 2 */}
-          <article className="group relative overflow-hidden shadow transition hover:shadow-lg">
+          <article
+            onClick={handleBlogPage}
+            className="group relative overflow-hidden shadow transition hover:shadow-lg cursor-pointer"
+          >
             <img
               alt=""
               src="https://wpbingosite.com/wordpress/vapas/wp-content/uploads/2017/04/Image-11-370x460.jpg"
@@ -63,7 +76,10 @@ const OurBlog = () => {
           </article>
 
           {/* CARD 3 */}
-          <article className="group relative overflow-hidden shadow transition hover:shadow-lg">
+          <article
+            onClick={handleBlogPage}
+            className="group relative overflow-hidden shadow transition hover:shadow-lg cursor-pointer"
+          >
             <img
               alt=""
               src="https://wpbingosite.com/wordpress/vapas/wp-content/uploads/2017/04/Image-6-370x460.jpg"

@@ -6,8 +6,9 @@ import "./Components.css";
 const TextData = () => {
   return (
     <p className="mx-2">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliq Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Aliq
+      Discover Houston's premier destination for smoke and vape products! From
+      premium e-liquids to top-of-the- line vape devices, we've got everything
+      you need.
     </p>
   );
 };
@@ -202,6 +203,16 @@ const Header = () => {
 
               <li className="poppins text-gray-800 hover:text-gray-600">
                 <Link
+                  to="/"
+                  onClick={handleLinkClick}
+                  className="font-medium text-[1.07rem]"
+                >
+                  Home
+                </Link>
+              </li>
+
+              <li className="poppins text-gray-800 hover:text-gray-600">
+                <Link
                   to="/products"
                   onClick={handleLinkClick}
                   className="font-medium text-[1.07rem]"
@@ -217,16 +228,6 @@ const Header = () => {
                   className="font-medium text-[1.07rem]"
                 >
                   Accessories
-                </Link>
-              </li>
-
-              <li className="poppins text-gray-800 hover:text-gray-600">
-                <Link
-                  to="/blogs"
-                  onClick={handleLinkClick}
-                  className="font-medium text-[1.07rem]"
-                >
-                  Blogs
                 </Link>
               </li>
 

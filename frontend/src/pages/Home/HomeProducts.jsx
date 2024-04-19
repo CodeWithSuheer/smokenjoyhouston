@@ -76,7 +76,7 @@ const HomeProducts = () => {
                         className="h-full w-full object-cover object-center lg:h-full lg:w-full transition duration-500 group-hover:scale-105"
                       />
                     </div>
-                    <div className="mt-2 lg:mt-3 flex justify-start">
+                    <div className="mt-2 lg:mt-3 flex justify-center">
                       <div>
                         <h3 className="pl-2 sm:pl-0 text-md lg:text-lg font-semibold text-black cursor-pointer">
                           {product.name}

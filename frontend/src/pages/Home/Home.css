@@ -5,3 +5,57 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* TOP BRAND BACKGROUND IMAGE */
+
+.top_brand_images {
+  position: relative;
+  background-image: url("https://cdn.shopify.com/s/files/1/0704/6378/2946/files/vaping-device.jpg?v=1713547511");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: fill;
+}
+
+.top_brand_images::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1d1d1dcc;
+  z-index: 1;
+}
+
+.top_brand_images .top_brand_images_cont {
+  position: relative;
+  z-index: 2;
+}
+
+/* STATS BACKGROUND IMAGE */
+
+.stats_images {
+  position: relative;
+  background-image: url("https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ss.jpg?v=1713548009");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: fill;
+}
+
+.stats_images::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1d1d1dcc;
+  z-index: 1;
+}
+
+.stats_images .stats_images_cont {
+  position: relative;
+  z-index: 2;
+}

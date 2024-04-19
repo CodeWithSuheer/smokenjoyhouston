@@ -1,9 +1,10 @@
+import "./Home.css";
+
 const TopBrands = () => {
   return (
     <>
-      <section className="py-10 px-5 sm:px-0 bg-gray-900">
-        <div className="max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto">
-
+      <section className="top_brand_images py-10 px-5 sm:px-0">
+        <div className="top_brand_images_cont max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto">
           {/* BRANDS */}
           <section className="">
             <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">

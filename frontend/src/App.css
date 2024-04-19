@@ -9,6 +9,11 @@ body {
   scroll-behavior: smooth !important;
 }
 
+::selection {
+  background: #252525;
+  color: #fff;
+}
+
 body {
   --sb-track-color: #ffffff;
   --sb-thumb-color: #333333;

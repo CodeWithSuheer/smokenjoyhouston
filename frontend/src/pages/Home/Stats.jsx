@@ -8,8 +8,8 @@ const Stats = () => {
   return (
     <>
       <ScrollTrigger onEnter={() => setCounterOn(true)}>
-        <section className="py-10 px-5 sm:px-0 bg-gray-800 text-white">
-          <div className="max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto my-2">
+        <section className="stats_images py-16 px-5 sm:px-0 bg-gray-800 text-white">
+          <div className="stats_images_cont max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto my-2">
             <div className="mx-auto px-4 py-4 sm:px-6 md:px-24 md:py-16 lg:px-0 lg:py-16">
               <div className="row-gap-8 grid grid-cols-2 md:grid-cols-4">
                 <div className="mb-12 text-center md:mb-0 md:border-r-2 dark:md:border-slate-500">

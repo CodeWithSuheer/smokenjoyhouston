@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import { createQueryAsync } from "../../features/queriesSlice";
-import toast from "react-hot-toast";
 import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
@@ -9,23 +7,22 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+import { createQueryAsync } from "../../features/queriesSlice";
 
 const Contact = () => {
   const dispatch = useDispatch();
   const [formdata, setFormdata] = useState({
     name: "",
     email: "",
-    phone: "",
+    phoneNumber: "",
     message: "",
   });
 
-  const { createLoading } = useSelector((state) => state.queries);
+  const { isLoading } = useSelector((state) => state.queries);
 
   // HANDLE SUBMIT
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formdata);
-    if (formdata.message) {
       dispatch(createQueryAsync(formdata)).then(() =>
         setFormdata({
           name: "",
@@ -34,9 +31,6 @@ const Contact = () => {
           message: "",
         })
       );
-    } else {
-      toast.error("Oops! Please fill in all fields.");
-    }
   };
 
   return (
@@ -165,9 +159,9 @@ const Contact = () => {
                         className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                         placeholder="Enter Phone Number"
                         type="number"
-                        value={formdata.phone}
+                        value={formdata.phoneNumber}
                         onChange={(e) =>
-                          setFormdata({ ...formdata, phone: e.target.value })
+                          setFormdata({ ...formdata, phoneNumber: e.target.value })
                         }
                         required
                       />
@@ -210,7 +204,7 @@ const Contact = () => {
 
                   <div className="flex justify-center items-center">
                     <button
-                      disabled={createLoading}
+                      disabled={isLoading}
                       type="submit"
                       className="mt-6 px-10 py-2 font-medium border-2 tracking-wider text-white border-white hover:bg-gray-100 hover:text-gray-800 transition-colors"
                     >

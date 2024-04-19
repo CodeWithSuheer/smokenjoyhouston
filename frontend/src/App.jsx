@@ -7,8 +7,10 @@ import Accessories from "./pages/accessories/Accessories";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import {Toaster} from "react-hot-toast";
 import Products from "./pages/products/Products";
 import "./App.css";
+
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
+      <Toaster/>
     </>
   );
 }

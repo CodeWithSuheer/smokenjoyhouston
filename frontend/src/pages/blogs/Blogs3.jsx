@@ -1,4 +1,4 @@
-const Blogs = () => {
+const Blogs3 = () => {
   return (
     <>
       <div>
@@ -102,7 +102,7 @@ const Blogs = () => {
                       {/* End Tooltip */}
                       <ul className="text-xs text-gray-500 dark:text-neutral-500">
                         <li className="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
-                          Apr 18
+                          Mar 22
                         </li>
                         <li className="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
                           8 min read
@@ -138,56 +138,59 @@ const Blogs = () => {
             <div className="space-y-5 md:space-y-8">
               <div className="space-y-3">
                 <h2 className="text-2xl font-bold md:text-3xl dark:text-white">
-                  Ohms Too Low on a Vape: What Does It Mean?
+                  Can You Bring a Vape on a Plane? How to Travel with Your Vape
+                  in 2024
                 </h2>
                 <p className="text-lg text-gray-800 dark:text-neutral-200">
-                  If your vape mod displays the error “Ohms Too Low” when you
-                  press the fire button, it means that your device can’t work
-                  safely because the detected resistance of the atomizer coil
-                  installed in the tank is too low.The best vapes always have
-                  built-in protection circuits that manage power delivery to
-                  ensure that you can vape safely
+                  If you’ve completed your transition to vaping and are no
+                  longer a smoker, there’s a good chance that your need for
+                  nicotine isn’t as great as it once was. You probably find that
+                  you can go longer without vaping than you previously were able
+                  to go without smoking a cigarette. It’s likely, however, that
+                  you still don’t want to be far from your vape if you’re going
+                  to be out of the house for a while – and that definitely
+                  applies to traveling with your vape. It’s not so different
+                  from wanting to bring your cigarettes on the plane if you were
+                  flying to another country.
                 </p>
               </div>
               <p className="text-lg text-gray-800 dark:text-neutral-200">
-                In some cases, a vape mod may also display the “Ohms Too Low”
-                error when it detects a short circuit. Whatever the reason for
-                the error may be, you can’t vape until you’ve resolved it
+                So, can you take a vape on a plane in 2024? In most cases,
+                you’ll have no trouble traveling with your vape as long as you
+                obey the rules that cover traveling with liquids and batteries
               </p>
               <figure>
                 <img
                   className="w-full object-cover rounded-xl"
-                  src="https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Ohms_too_low.jpg?v=1713553714"
+                  src="https://cdn.shopify.com/s/files/1/0649/1399/8024/files/flat-lay-yellow-luggage-with-copy-space.webp?v=1713555846"
                   alt="Image Description"
                 />
               </figure>
               <p className="text-lg text-gray-800 dark:text-neutral-200">
-                Before you get too deep into troubleshooting your vape mod’s
-                “Ohms Too Low” error, you should check your device’s
-                specifications because it’s possible that the coil’s resistance
-                actually is too low. When you check the specifications of a
-                device like the Kroma 217 at Innokin.com, you’ll see the
-                device’s supported coil resistances at the bottom of the page
-                next to “Resistance range.” In this case, the Kroma 217 supports
-                coils with resistances as low as 0.1 ohm. You’re not likely to
-                find a pre-built coil with a resistance lower than that – but if
-                you do, it won’t work with this device.
+                Vaping regulations are continually evolving. Research the
+                relevant laws about bringing vapes on a plane before you
+                travel.The most important thing to know about bringing your vape
+                on a plane is that airlines’ rules about vaping – and the vaping
+                laws in the various nations around the world – can change
+                without notice.
               </p>
               <p className="text-lg text-gray-800 dark:text-neutral-200">
-                Every vape mod has a minimum supported coil resistance. If you
-                can’t find your device’s minimum resistance online, you should
-                be able to find it in the instruction manual.
+                Vaping devices and replacement batteries always belong in your
+                carry-on bag. Don’t ever bring a vape on a plane in your checked
+                luggage unless the battery is removed and stored separately in
+                your hand baggage.
               </p>
               <blockquote className="text-center p-4 sm:px-7">
                 <p className="text-xl font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal dark:text-neutral-200">
-                  You can usually find the resistance of a vape coil on its box
-                  and etched into the side of the coil itself.
+                  Next, we’d like to discuss three offerings from Innokin that
+                  we believe will be a great fit if you’re looking for the best
+                  salt nic vape for your needs.
                 </p>
               </blockquote>
               <figure>
                 <img
                   className="w-full object-cover rounded-xl"
-                  src="https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Kroma_217-Apr-18-2024-08-53-15-3416-AM.webp?v=1713554018"
+                  src="https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Vape_on_a_Plane_300k.webp?v=1713556000"
                   alt="Image Description"
                 />
               </figure>
@@ -200,4 +203,4 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+export default Blogs3;

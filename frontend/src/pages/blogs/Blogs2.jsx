@@ -1,4 +1,4 @@
-const Blogs = () => {
+const Blogs2 = () => {
   return (
     <>
       <div>
@@ -138,56 +138,60 @@ const Blogs = () => {
             <div className="space-y-5 md:space-y-8">
               <div className="space-y-3">
                 <h2 className="text-2xl font-bold md:text-3xl dark:text-white">
-                  Ohms Too Low on a Vape: What Does It Mean?
+                  What Are the Best Vapes for Nicotine Salt?
                 </h2>
                 <p className="text-lg text-gray-800 dark:text-neutral-200">
-                  If your vape mod displays the error “Ohms Too Low” when you
-                  press the fire button, it means that your device can’t work
-                  safely because the detected resistance of the atomizer coil
-                  installed in the tank is too low.The best vapes always have
-                  built-in protection circuits that manage power delivery to
-                  ensure that you can vape safely
+                  For several years now, nicotine salt e-liquid is been one of
+                  the biggest success stories in the vaping industry. It’s
+                  enabled people to have more satisfying experiences with
+                  smaller vaping devices – and the fact that you can now have a
+                  great vaping experience without using a full-sized vape mod
+                  has encouraged more people than ever to finally make the
+                  switch from smoking to vaping.
                 </p>
               </div>
               <p className="text-lg text-gray-800 dark:text-neutral-200">
-                In some cases, a vape mod may also display the “Ohms Too Low”
-                error when it detects a short circuit. Whatever the reason for
-                the error may be, you can’t vape until you’ve resolved it
+                If you’re new to vaping and are shopping for your first
+                refillable vaping device, you probably already know that you’re
+                going to buy a nic salt vape
               </p>
               <figure>
                 <img
                   className="w-full object-cover rounded-xl"
-                  src="https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Ohms_too_low.jpg?v=1713553714"
+                  src="https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Klypse_Zip-1.webp?v=1713554519"
                   alt="Image Description"
                 />
               </figure>
               <p className="text-lg text-gray-800 dark:text-neutral-200">
-                Before you get too deep into troubleshooting your vape mod’s
-                “Ohms Too Low” error, you should check your device’s
-                specifications because it’s possible that the coil’s resistance
-                actually is too low. When you check the specifications of a
-                device like the Kroma 217 at Innokin.com, you’ll see the
-                device’s supported coil resistances at the bottom of the page
-                next to “Resistance range.” In this case, the Kroma 217 supports
-                coils with resistances as low as 0.1 ohm. You’re not likely to
-                find a pre-built coil with a resistance lower than that – but if
-                you do, it won’t work with this device.
+                Before you get too deep into troubleshooting your vape mod’s The
+                term “nicotine salt” refers to the type of nicotine used in a
+                bottle of e-liquid. Until fairly recently, all e-liquid – and
+                almost all nicotine replacement products – used a different type
+                of nicotine called freebase nicotine. Nicotine is salt in its
+                natural form, but it’s converted to a free base during the
+                process of extracting it from tobacco leaves. Ammonia is used as
+                a solvent to increase the yield of the extraction, and ammonia
+                is also responsible for the conversion of nicotine from a salt
+                to a free base.
               </p>
               <p className="text-lg text-gray-800 dark:text-neutral-200">
-                Every vape mod has a minimum supported coil resistance. If you
-                can’t find your device’s minimum resistance online, you should
-                be able to find it in the instruction manual.
+                The most important thing to know about shopping for a vaping
+                device for nicotine salt vape juice is that the best salt nic
+                vapes are always smaller devices. That’s because nicotine salt
+                e-liquid usually comes in much higher nicotine strengths than
+                freebase e-liquid.
               </p>
               <blockquote className="text-center p-4 sm:px-7">
                 <p className="text-xl font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal dark:text-neutral-200">
-                  You can usually find the resistance of a vape coil on its box
-                  and etched into the side of the coil itself.
+                  Next, we’d like to discuss three offerings from Innokin that
+                  we believe will be a great fit if you’re looking for the best
+                  salt nic vape for your needs.
                 </p>
               </blockquote>
               <figure>
                 <img
                   className="w-full object-cover rounded-xl"
-                  src="https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Kroma_217-Apr-18-2024-08-53-15-3416-AM.webp?v=1713554018"
+                  src="https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Nicotine_Salt.webp?v=1713555331"
                   alt="Image Description"
                 />
               </figure>
@@ -200,4 +204,4 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+export default Blogs2;

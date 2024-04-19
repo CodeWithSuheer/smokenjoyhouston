@@ -23,7 +23,18 @@ const categories = [
     image:
       "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/image_1024.jpg?v=1713478797",
   },
+  {
+    id:5,
+    name:"Kratom",
+    image:"https://cdn.shopify.com/s/files/1/0649/1399/8024/files/360_F_443419933_HmlqPjJeCLYgpKj3YMhVU5SsecI4EjV4.jpg?v=1713551494"
+  },
+  {
+    id:6,
+    name:"Delta 8",
+    image:"https://cdn.shopify.com/s/files/1/0649/1399/8024/files/3e3ad9_8acd633b4703474ba0947193e852582e_mv2.webp?v=1713551624"
+  }
 ];
+
 const products = [
   {
     subCategoryId: 1,

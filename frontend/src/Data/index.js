@@ -34,6 +34,7 @@ const categories = [
     image:"https://cdn.shopify.com/s/files/1/0649/1399/8024/files/3e3ad9_8acd633b4703474ba0947193e852582e_mv2.webp?v=1713551624"
   }
 ];
+
 const products = [
   {
     subCategoryId: 1,
@@ -242,15 +243,11 @@ const accessories = [
       "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/10247__40541.jpg?v=1713549710",
   },
   {
-
-    id:2,
-    name:"Refills and Pods",
-    image:"https://cdn.shopify.com/s/files/1/0649/1399/8024/files/vape_philippines_600x600_de84bd3b-505b-40bb-8155-172b1f3fae84.webp?v=1713549710"
-  }
+    id: 2,
+    name: "Refills and Pods",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/vape_philippines_600x600_de84bd3b-505b-40bb-8155-172b1f3fae84.webp?v=1713549710",
+  },
 ];
 
-export {
-  categories,
-  products,
-  accessories
-}
+export { categories, products, accessories };

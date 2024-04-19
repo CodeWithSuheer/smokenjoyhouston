@@ -24,6 +24,12 @@ const Carousel = () => {
     {
       img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/man-1854175_1920.jpg?v=1713388463",
     },
+    {
+      img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/IMG_2559.png?v=1713559234",
+    },
+    // {
+    //   img: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/IMG_2560.png?v=1713559234",
+    // },
   ];
 
   return (

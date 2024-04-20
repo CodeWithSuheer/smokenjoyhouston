@@ -37,204 +37,423 @@ const categories = [
 
 const products = [
   {
-    subCategoryId: 1,
     id: 1,
+    subCategoryId: 1,
     categoryId: 1,
-    name: "OG-FOUR",
+    name: "kratom Red Broneo 40 Capsule",
     image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/OG-FOUR.jpg?v=1713481673",
-    description:
-      "Our patented Lava-Quartz technology is the first of its kind, and draws inspiration from traditional glass. This RiG rips like a classic",
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/kratom_-_red_broneo_40_capsule.webp?v=1713566320",
   },
   {
-    subCategoryId: 1,
     id: 2,
+    subCategoryId: 1,
     categoryId: 1,
-    name: "PHIX-by-MLV",
+    name: "Kratom k Shot",
     image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/PHIX-by-MLV.jpg?v=1713481673",
-    description:
-      "The Phix by MLV is a sleek and slender prefilled pod vape, once known as the JUUL killer. It's been around since 2017",
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/kratom-_k_shot.webp?v=1713566320",
   },
   {
-    subCategoryId: 1,
     id: 3,
-    categoryId: 2,
-    name: "LAVOO-GLASS-HOOKAHS2",
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Kratom Choice Borneo",
     image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/LAVOO-GLASS-HOOKAHS2.jpg?v=1713481673",
-    description:
-      "Lavoo Hookah specialize in fine glass hookahs and hookah accessories for your smoking pleasure.",
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/kratom-choice_borneo.jpg?v=1713566320",
   },
   {
-    subCategoryId: 1,
     id: 4,
-    categoryId: 3,
-    name: "KHALIL-MAMOON-TRIMETAL-ZOHARIA3",
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "kratom Opms Back",
     image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/KHALIL-MAMOON-TRIMETAL-ZOHARIA3.jpg?v=1713481673",
-    description:
-      "The design of the LaVoo MP2 defies all rules of hookah manufacturing. The MP2 features a horizontal downstem",
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/kratom-_opms_black.jpg?v=1713566321",
   },
   {
-    subCategoryId: 1,
     id: 5,
-    categoryId: 4,
-    name: "JAM-MONSTER-E-LIQUID2",
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "kratom 7OHMZ Tablets 6",
     image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/JAM-MONSTER-E-LIQUID2.jpg?v=1713481673",
-    description:
-      "This blend is a balanced sweet that beginners and novices can enjoy equally!",
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/kratom-_7OHMZ-Tablets-6.webp?v=1713566320",
   },
   {
-    subCategoryId: 1,
     id: 6,
+    subCategoryId: 1,
     categoryId: 1,
-    name: "ABALONE-GLASS-PIPE",
+    name: "KRATOM CHOICE MAENGA DA",
     image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/ABALONE-GLASS-PIPE.jpg?v=1713481672",
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/kratom-choice_maenga_da.webp?v=1713566320",
   },
   {
-    subCategoryId: 1,
     id: 7,
-    categoryId: 2,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "kratom Mit 45",
     image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/JUST-REDS-E-LIQUID-BY-ALT-ZERO-100M.jpg?v=1713481673",
-    name: "JUST-REDS-E-LIQUID-BY-ALT-ZERO-100M",
-    description:
-      "Experience the striking succulent explosion of your favorite red organic product flavored candies! Strawberry, watermelon, cherry",
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/kratom-_mit_45.webp?v=1713566320",
   },
   {
-    subCategoryId: 1,
     id: 8,
-    categoryId: 3,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Kratom Maenga Da 120 Capsule",
     image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Lost-Mary-2-1-300x300.jpg?v=1713481673",
-    name: "Lost-Mary-2-1-300x300",
-    description:
-      "Equipped with an internal battery capacity of 360mAh, the vape pods provide long-lasting power to keep you going throughout the day.",
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/kratom-_maenga_da_120_capsule.webp?v=1713566319",
   },
   {
-    subCategoryId: 1,
     id: 9,
-    categoryId: 4,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "EJuice Juice Head Orange Mango",
     image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/type-of-vaping-products.jpg?v=1713481672",
-    name: "type-of-vaping-products",
-    description:
-      "E-cigarette, or vaping, products can be used to deliver nicotine, cannabis (THC, CBD), flavorings, chemicals, and other substances",
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/ejuice_-_juice_head_orange_mango.webp?v=1713567694",
   },
   {
-    subCategoryId: 1,
     id: 10,
+    subCategoryId: 1,
     categoryId: 1,
+    name: "EJuice Yogi E liquids",
     image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/AMIRA-HOOKAHS5.jpg?v=1713481672",
-    name: "AMIRA-HOOKAHS5",
-    description:
-      "Amira Luxury hookah bowls come in 5 different styles. Please check pictures for the style needed",
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/ejuice_-_yogi-e-liquids.jpg?v=1713567694",
   },
   {
-    subCategoryId: 1,
     id: 11,
-    categoryId: 2,
-    image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/SMOK-MAG2.jpg?v=1713481672",
-    name: "SMOK-MAG2",
-    description:
-      "Here comes the latest SMOK MAG Kit! It consists of a new MAG box mod with a TFV12 Prince tank",
-  },
-  {
     subCategoryId: 1,
-    id: 12,
-    categoryId: 2,
-    image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/PULSAR-APX-WAX-VAPORIZER1.jpg?v=1713481673",
-    name: "PULSAR-APX-WAX-VAPORIZER1",
-    description:
-      "The Pulsar APX Wax Vaporizer is powerful, portable and distinctly discreet at 3.5 inches tall!",
-  },
-  {
-    subCategoryId: 1,
-    id: 13,
-    categoryId: 2,
-    image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/JUST-REDS-E-LIQUID-BY-ALT-ZERO-100M_1.jpg?v=1713481673",
-    name: "JUST-REDS-E-LIQUID-BY-ALT-ZERO-100M_1",
-    description:
-      "Experience the striking succulent explosion of your favorite red organic product flavored candies!",
-  },
-  {
-    subCategoryId: 1,
-    id: 14,
-    categoryId: 2,
-    image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/FRYD-60ML3.jpg?v=1713481673",
-    name: "FRYD-60ML3",
-    description:
-      "A delicious take on a deep fried sponge cream cake stuffed with a sweet cream filling. Just like you get a the fair.",
-  },
-  {
-    subCategoryId: 1,
-    id: 15,
-    categoryId: 3,
-    image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/ECONO-MYA-GELATO-2-HOSE-HOOKAH.jpg?v=1713481672",
-    name: "ECONO-MYA-GELATO-2-HOSE-HOOKAH",
-    description:
-      "The Mya Gelato comes with a 6-foot long Mya hose, tray, matching porcelain bowl, and all the necessary grommets to ensure an air-tight seal.",
-  },
-  {
-    subCategoryId: 1,
-    id: 16,
-    categoryId: 4,
-    image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/EXCISION-E-LIQUID-3.jpg?v=1713481672",
-    name: "EXCISION-E-LIQUID-3",
-    description:
-      "One of their standout stars is Paradox, a delightful blend of pitch black dew with bold citrus, grape, and dark fruits",
-  },
-  {
-    subCategoryId: 1,
-    id: 17,
     categoryId: 1,
+    name: "EJuice Daze Salt Watermelon",
     image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/AIR-FACTORY-E-LIQUID.jpg?v=1713481672",
-    name: "AIR-FACTORY-E-LIQUID",
-    description:
-      "This award-winning flavor is a blast of Blue Raspberry. Mildly sweet, mellow, with light creamy undertones. Learn More.",
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/ejuice_-_Daze_Salt_Watermelon.jpg?v=1713567694",
   },
   {
+    id: 12,
     subCategoryId: 1,
+    categoryId: 1,
+    name: "Vapetasia Salts Pineapple",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/vapetasia-salts-pineapple.webp?v=1713567693",
+  },
+  {
+    id: 13,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "EJuice Finest Salt Inc Lemon",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/vapetasia-salts-pineapple.webp?v=1713567693",
+  },
+  {
+    id: 14,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "EJuice Salt Nkd 100",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/e_juice_-_salt_nkd_100.jpg?v=1713567693",
+  },
+  {
+    id: 15,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "EJuice Cpastal Clouds Tes Leches",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/ejuice-_coastal_clouds_tes_leches.webp?v=1713567694",
+  },
+  {
+    id: 16,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "EJuice Naked All Melon",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/e_juice-_naked_all_melon.webp?v=1713567693",
+  },
+  {
+    id: 17,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "EJuice REDS Apple",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/ejuice_-_REDS_apple.jpg?v=1713567694",
+  },
+  {
     id: 18,
-    categoryId: 2,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "EJuice Twist",
     image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/FRUITY-CRISPY-TREATS-E-LIQUID2.jpg?v=1713481672",
-    name: "FRUITY-CRISPY-TREATS-E-LIQUID2",
-    description:
-      "lueberry Crispy E-liquid by Ethos Crispy Treats is a Fruity Cereal, marshmallow and rice crispy treats",
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/ejuice-_twist_-mint0sat__19274.jpg?v=1713567693",
   },
   {
+    id: 38,
     subCategoryId: 1,
+    categoryId: 1,
+    name: "Titanium Cubes",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Titanium_Cubes.png?v=1713565110",
+  },
+  {
+    id: 39,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Al Fakher Hookah Flavors",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Al_Fakher_Hookah_Flavors.jpg?v=1713565110",
+  },
+  {
+    id: 40,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Adalya Hookah Tobacco",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Adalya_Hookah_Tobacco.png?v=1713565109",
+  },
+  {
+    id: 41,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Starbuzz Hookah",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Starbuzz-Hookah.jpg?v=1713565109",
+  },
+  {
+    id: 42,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "CocoNara Natural Hookah",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/CocoNara_Natural_Hookah.png?v=1713565109",
+  },
+  {
+    id: 43,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Strikingly Flavors",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Strikingly_Flavors.png?v=1713565109",
+  },
+  {
+    id: 44,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Starbuzz Hookah",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Starbuzz_hookah.png?v=1713565109",
+  },
+  {
+    id: 45,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Khalil Mamoon Hookah",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Khalil_Mamoon_Hookah.jpg?v=1713565109",
+  },
+  {
+    id: 28,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Suorin Air Pro Pod System All Colors",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/suorin_-_air_pro_-_pod_system_-_all_colors.png?v=1713569991",
+  },
+  {
+    id: 29,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "E-CIG-CALIBURN-A3",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/e-cig-Caliburn-A3.jpg?v=1713569991",
+  },
+  {
+    id: 30,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Mag P3 Smoke",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Mag_P3-_Smok__65242.jpg?v=1713569990",
+  },
+  {
+    id: 31,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Geek VapeWENAX-H1",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/geek_vapeWENAX-H1.webp?v=1713569990",
+  },
+  {
+    id: 32,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Red Stabilizing Wood CloudIsland",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Red-Stabilizing-Wood_CloudIsland.webp?v=1713569989",
+  },
+  {
+    id: 33,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Smok-G-Prive-4-Kit-Black",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Smok-G-Prive-4-Kit-Black.jpg?v=1713569990",
+  },
+  {
+    id: 34,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "ECig Calibum unwellwebp",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/e-cig_calibum_unwellwebp.webp?v=1713569990",
+  },
+  {
+    id: 35,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "ECigg calibum A2",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/e-cigg_calibum_A2.jpg?v=1713569989",
+  },
+  {
+    id: 36,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Smok Novo-4",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/smok-novo-4.jpg?v=1713569989",
+  },
+  {
+    id: 37,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Wood Smok Novo Pod Kit",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/wood-smok-novo-pod-kit.jpg?v=1713569990",
+  },
+  {
+    id: 46,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "SMOKE Novo 2 Pod Kit",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/SMOK-Novo-2-Pod-Kit-800-Mah-Battery-Vape-Online-in-Pakistan18.jpg?v=1713570636",
+  },
+  {
+    id: 47,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Airbar Stick Summer Breeze",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/airbar-stick-summer-breeze-600x600.jpg?v=1713570636",
+  },
+  {
+    id: 48,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Juicy Bar jb5000 Berry Ice",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/juicy-bar-jb5000-disposable-vape-black-blueberry-ice-41759382307106.webp?v=1713570635",
+  },
+  {
+    id: 49,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Dispossible Lost Marry watermelon",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/Dispossible_Lost_Marry_-_watermelon.webp?v=1713570635",
+  },
+  {
+    id: 50,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Dispossible Vape",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/9414C35E-5FEC-4E05-86E4-877F242EE1AB.webp?v=1713570636",
+  },
+  {
     id: 19,
-    categoryId: 3,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Cake 3.0 Candy Jack Sauce",
     image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/pipe_and_glas.jpg?v=1713481672",
-    name: "pipe_and_glas",
-    description:
-      "Glass pipes allow users to inhale their drugs of choice. Interestingly enough, some glass pipes are nearly works of art",
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/cake_3.0_candy_jack_sauce.png?v=1713569242",
   },
   {
-    subCategoryId: 1,
     id: 20,
-    categoryId: 4,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Akora Liquid Blue Berry",
     image:
-      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/R-SERIES-2.jpg?v=1713481672",
-    name: "R-SERIES-2",
-    description:
-      "“Vapor Blast” mouthpiece makes these devices even more discreet, and the classic mouthpiece is included for fans of the original visual chamber",
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/akora_liquid_blue_berry.webp?v=1713569241",
+  },
+  {
+    id: 21,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Hybrid Stizzy X Blend Gelato",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/hybrid_stizzy_x_blend_gelato.webp?v=1713569241",
+  },
+  {
+    id: 22,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Cake 3.0 Hawaiian Sweet Haze Sativa",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/cake_3.0_hawaiian_sweet_haze_sativa.webp?v=1713569240",
+  },
+  {
+    id: 22,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Akora Liquid Diamond",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/akora_liquid_diamond.webp?v=1713569241",
+  },
+  {
+    id: 23,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Hybrid Stizzy X Blend Skywalker Og",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/hybrid_stizzy_x_blend_skywalker_og.webp?v=1713569241",
+  },
+  {
+    id: 23,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Cake 2.0 Ceral Milk",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/cake_2.0_ceral_milk.webp?v=1713569241",
+  },
+  {
+    id: 24,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Cake lemonade StiVA",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/cake_lemonade_stiVA.jpg?v=1713569241",
+  },
+  {
+    id: 25,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Exotix Sauced",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/exotix_sauced.jpg?v=1713569241",
+  },
+  {
+    id: 26,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Indica Watermelon-Z",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/indica-watermelon-z.jpg?v=1713569241",
+  },
+  {
+    id: 27,
+    subCategoryId: 1,
+    categoryId: 1,
+    name: "Akora Thca Flower",
+    image:
+      "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/akora_thca_flower.jpg?v=1713569240",
   },
 ];
+
 const accessories = [
   {
     id: 1,

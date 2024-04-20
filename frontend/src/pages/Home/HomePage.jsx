@@ -8,6 +8,7 @@ import TopBrands from "./TopBrands";
 import HomeSlider from "./HomeSlider";
 import OurBlog from "./OurBlog";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   // AOS
@@ -34,17 +35,21 @@ const HomePage = () => {
                 />
 
                 <div className="content absolute px-5 sm:px-16">
-                  <h2 className="mb-3 text-2xl sm:text-3xl font-bold">
-                    Vaper Just Ice
+                  <h2 className="mb-3 uppercase text-2xl sm:text-3xl font-bold">
+                    E Liquid
                   </h2>
-                  <p className="mb-3 max-w-xs">
-                    It is a long established fact that content of a page when
-                    looking.
+                  <p className="mb-6 max-w-xs">
+                    Explore flavorful experiences with our premium E Liquid
+                    collection today.
                   </p>
 
-                  <button className="px-7 py-2 mt-3 sm:mt-5 font-medium border-2 border-white hover:bg-gray-100 hover:text-gray-800 transition-colors">
+                  <Link
+                    to="/products"
+                    onClick={() => window.scroll(0, 0)}
+                    className="px-7 py-2 mt-3 sm:mt-5 font-medium border-2 border-white hover:bg-gray-100 hover:text-gray-800 transition-colors"
+                  >
                     SHOP NOW
-                  </button>
+                  </Link>
                 </div>
               </div>
 
@@ -58,16 +63,20 @@ const HomePage = () => {
 
                 <div className="content absolute px-5 sm:px-16">
                   <h2 className="mb-3 text-2xl sm:text-3xl font-bold">
-                    Pen Vaper
+                    Dispossible Vape
                   </h2>
-                  <p className="mb-3 max-w-xs">
-                    It is a long established fact that content of a page when
-                    looking.
+                  <p className="mb-6 max-w-xs">
+                    Easy, portable vaping pleasure with our disposable vape
+                    collection.
                   </p>
 
-                  <button className="px-7 py-2 font-medium border-2 border-white hover:bg-gray-100 hover:text-gray-800 transition-colors">
+                  <Link
+                    to="/products"
+                    onClick={() => window.scroll(0, 0)}
+                    className="px-7 py-2 font-medium border-2 border-white hover:bg-gray-100 hover:text-gray-800 transition-colors"
+                  >
                     SHOP NOW
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

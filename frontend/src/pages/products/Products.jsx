@@ -27,7 +27,7 @@ const Products = () => {
           <div className="flex items-center justify-center xl:justify-start">
             <div className="heading">
               <h2 className="text-3xl font-bold tracking-normal">Categories</h2>
-              <p className="bg-[#C29168] h-[0.20rem] mt-2"></p>
+              <p className="bg-[#C29168] h-[0.20rem] mt-1"></p>
             </div>
           </div>
 
@@ -45,7 +45,7 @@ const Products = () => {
                     key={index}
                     className="group relative mt-1"
                   >
-                    <div className="aspect-h-1 aspect-w-1 w-full cursor-pointer border border-gray-300 overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80">
+                    <div className=" w-full cursor-pointer border border-gray-300 overflow-hidden rounded-md bg-gray-200 h-40 md:h-60 lg:h-80">
                       <img
                         src={product?.image}
                         alt="product"
@@ -54,7 +54,7 @@ const Products = () => {
                     </div>
                     <div className="mt-2 lg:mt-3 flex justify-start">
                       <div>
-                        <h3 className="pl-2 sm:pl-0 text-md lg:text-lg font-semibold text-black cursor-pointer">
+                      <h3 className="pl-2 sm:pl-0 text-sm md:text-md lg:text-lg font-medium text-black cursor-pointer">
                           {product.name}
                         </h3>
                       </div>
@@ -76,7 +76,7 @@ const Products = () => {
               <h2 className="text-3xl font-bold tracking-normal">
                 All Products
               </h2>
-              <p className="bg-[#C29168] h-[0.20rem] mt-2"></p>
+              <p className="bg-[#C29168] h-[0.20rem] mt-1"></p>
             </div>
           </div>
 
@@ -86,7 +86,7 @@ const Products = () => {
               <div className="mt-4 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                 {products?.map((product, index) => (
                   <div key={index} className="group relative mt-1">
-                    <div className="aspect-h-1 aspect-w-1 w-full cursor-pointer border border-gray-300 overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80">
+                    <div className=" w-full cursor-pointer border border-gray-300 overflow-hidden rounded-md bg-gray-200 h-40 md:h-60 lg:h-80">
                       <img
                         src={product?.image}
                         alt="product"
@@ -95,7 +95,7 @@ const Products = () => {
                     </div>
                     <div className="mt-2 lg:mt-3 flex justify-start">
                       <div>
-                        <h3 className="pl-2 sm:pl-0 text-md lg:text-lg font-semibold text-black cursor-pointer">
+                        <h3 className="pl-2 sm:pl-0 text-sm md:text-md lg:text-lg font-medium text-black cursor-pointer">
                           {product.name}
                         </h3>
                       </div>

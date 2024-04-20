@@ -4,11 +4,11 @@ const PrivacyPolicy = () => {
       <section className="bg-[#252525] text-[#f5f5f5]">
         <div className="max-w-5xl xl:max-w-6xl px-4 sm:px-6 py-10 mx-auto min-h-screen">
           <h2 className="poppin text-3xl lg:text-4xl font-bold tracking-wide">
-            Privacy Policy - SmokeNJoy
+            Privacy Policy - Smokenjoy
           </h2>
 
           <p className="mb-4 mt-3">
-            SmokeNJoy is committed to protecting the privacy of our clients and
+            Smokenjoy is committed to protecting the privacy of our clients and
             users. We understand that your personal information is important to
             you, and we take our responsibility to protect it seriously.
           </p>
@@ -23,22 +23,22 @@ const PrivacyPolicy = () => {
           </p>
 
           <ul className="list-disc list-inside mb-4">
-            <li className="">
+            <li>
               Contact information, such as your name, email address, and phone
               number. We need this information to communicate with you about
               your account and to provide you with support.
             </li>
-            <li className="">
+            <li>
               Billing information, such as your credit card or bank account
               details. We need this information to process payments for our
               services.
             </li>
-            <li className="">
+            <li>
               Technical information, such as your IP address, device type, and
               operating system. We collect this information to help us improve
               our services and to troubleshoot any problems you may encounter.
             </li>
-            <li className="">
+            <li>
               Usage data, such as the pages you visit on our website and the
               services you use. We collect this information to help us
               understand how our services are being used and to improve our user
@@ -109,10 +109,11 @@ const PrivacyPolicy = () => {
           <h2 className="mt-6 text-2xl font-bold mb-2">Contact us</h2>
           <p className="mb-4">
             If you have any questions about this Privacy Policy, please contact
-            us at info@octatechsolution.com
+            us at <a href="mailto:info@smokenjoyhoustons.com" target="_blank" className="underline underline-offset-4">info@smokenjoyhoustons.com</a>
           </p>
         </div>
       </section>
+
 
       {/* DIVIDER */}
       <span className="relative flex justify-center bg-[#252525]">

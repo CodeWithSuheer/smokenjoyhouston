@@ -15,30 +15,24 @@ const TextData = () => {
 
 const Header = () => {
   const navigate = useNavigate();
-  const [responsiveMenu, setResponsiveMenu] = useState();
-  // const [isDropDownOpen, setIsDropDownOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const [responsiveMenu, setResponsiveMenu] = useState();
+  const [showContactUs, setShowContactUs] = useState(false);
 
-  const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      setIsDropDownOpen(false);
-    }
-  };
 
   useEffect(() => {
-    document.addEventListener("click", handleClickOutside);
+    const handleResize = () => {
+      setShowContactUs(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    handleResize();
+
     return () => {
-      document.removeEventListener("click", handleClickOutside);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
-
-  // const toggleDropdown = () => {
-  //   setIsDropDownOpen(!isDropDownOpen);
-  // };
-
-  // const handleMoveToTop = () => {
-  //   window.scroll(0, 0);
-  // };
 
   const handleLinkClick = () => {
     setResponsiveMenu(false);
@@ -63,6 +57,7 @@ const Header = () => {
       <nav className={`md:text-sm bg-white border-b border-gray-300 shadow-lg`}>
         <div className="items-center px-4 max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto md:flex md:px-6 xl:px-0">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            {/* LOGO */}
             <Link to="/">
               <img
                 className="w-36"
@@ -104,101 +99,10 @@ const Header = () => {
             </div>
           </div>
 
-          <div
-            className={`flex-1 justify-self-center pb-8 mt-8 md:block md:pb-0 md:mt-0 ${responsiveMenu ? "block" : "hidden"
-              }`}
-          >
+          {/* MENU */}
+          <div className={`flex-1 justify-self-center pb-8 mt-8 md:block md:pb-0 md:mt-0 ${responsiveMenu ? "block" : "hidden"}`}>
+
             <ul className="text-center justify-center items-center space-y-8 md:flex md:space-x-6 lg:space-x-8 md:space-y-0">
-              {/* <li
-                className="text-gray-800 hover:text-[#1A73E8]"
-                ref={dropdownRef}
-              >
-                <div className="dropdown relative">
-                  <button
-                    onClick={toggleDropdown}
-                    className="text-md font-medium tracking-wide text-gray-700 rounded-xl"
-                  >
-                    <span className="flex items-center font-medium text-[1.07rem]">
-                      Services
-                      {isDropDownOpen ? (
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="21"
-                          height="21"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="pt-0.5 lucide lucide-chevron-up"
-                        >
-                          <path d="m18 15-6-6-6 6" />
-                        </svg>
-                      ) : (
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="21"
-                          height="21"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="pt-0.5 lucide lucide-chevron-down"
-                        >
-                          <path d="m6 9 6 6 6-6" />
-                        </svg>
-                      )}
-                    </span>
-                  </button>
-
-                  {isDropDownOpen && (
-                    <div className="absolute right-0 z-20 w-40 py-2 mt-4 overflow-hidden origin-top-right bg-white rounded-xl shadow-xl">
-                      <Link
-                        to="/online-classes"
-                        onClick={() => {
-                          toggleDropdown();
-                          handleMoveToTop();
-                          handleLinkClick();
-                        }}
-                        className="block px-4 py-3  w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100 "
-                      >
-                        Online Classes
-                      </Link>
-
-                      <hr className="border-gray-200" />
-
-                      <Link
-                        to="/exams"
-                        onClick={() => {
-                          toggleDropdown();
-                          handleMoveToTop();
-                          handleLinkClick();
-                        }}
-                        className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100 "
-                      >
-                        Exams
-                      </Link>
-
-                      <hr className="border-gray-200" />
-
-                      <Link
-                        to="/assignments"
-                        onClick={() => {
-                          toggleDropdown();
-                          handleMoveToTop();
-                          handleLinkClick();
-                        }}
-                        className="block px-4 py-3 w-full text-left text-sm text-gray-800 font-medium capitalize transition-colors duration-300 transform hover:bg-gray-100 "
-                      >
-                        Assignments
-                      </Link>
-                    </div>
-                  )}
-                </div>
-              </li> */}
 
               <li className="poppins text-gray-800 hover:text-gray-600">
                 <Link
@@ -239,9 +143,20 @@ const Header = () => {
                   About Us
                 </Link>
               </li>
+
+              {showContactUs && (
+                <li className="poppins text-gray-800 hover:text-gray-600">
+                  <Link to="/contact" onClick={handleLinkClick} className="font-medium text-[1.07rem]">
+                    Contact Us
+                  </Link>
+                </li>
+              )}
+
             </ul>
           </div>
 
+
+          {/* CONTACT BUTTON */}
           <div className="hidden md:inline-block">
             <button onClick={handleContact} className="navbar_button">
               <span>CONTACT US</span>

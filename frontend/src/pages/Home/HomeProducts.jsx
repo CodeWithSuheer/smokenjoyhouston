@@ -25,10 +25,10 @@ const HomeProducts = () => {
           {/* HEADER */}
           <div className="flex items-center justify-center xl:justify-start">
             <div className="heading">
-              <h2 className="text-3xl font-bold tracking-normal">
+              <h2 className="Commissioner text-3xl font-bold tracking-normal">
                 Our Products
               </h2>
-              <p className="bg-[#C29168] h-[0.20rem] mt-2"></p>
+              <p className="bg-[#C29168] h-[0.20rem] mt-1"></p>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ const HomeProducts = () => {
                     </div>
                   </motion.div>
                 ))}
-                
+
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ const HomeProducts = () => {
                     </div>
                   </motion.div>
                 ))}
-                
+
               </div>
             </div>
           </div>

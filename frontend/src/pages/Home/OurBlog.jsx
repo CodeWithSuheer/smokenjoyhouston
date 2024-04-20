@@ -21,7 +21,7 @@ const OurBlog = () => {
         <div className="flex items-center justify-between sm:px-6">
           <div className="heading">
             <h2 className="text-3xl font-bold tracking-wide">Our Blog</h2>
-            <p className="bg-[#C29168] h-[0.20rem] mt-2"></p>
+            <p className="bg-[#C29168] h-[0.20rem] mt-1"></p>
           </div>
         </div>
 

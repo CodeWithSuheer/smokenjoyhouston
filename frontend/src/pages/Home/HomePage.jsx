@@ -35,7 +35,7 @@ const HomePage = () => {
                 />
 
                 <div className="content absolute px-5 sm:px-16">
-                  <h2 className="mb-3 uppercase text-2xl sm:text-3xl font-bold">
+                  <h2 className="Cormorant mb-2 uppercase text-2xl sm:text-3xl font-bold">
                     E Liquid
                   </h2>
                   <p className="mb-6 max-w-xs">
@@ -62,7 +62,7 @@ const HomePage = () => {
                 />
 
                 <div className="content absolute px-5 sm:px-16">
-                  <h2 className="mb-3 text-2xl sm:text-3xl font-bold">
+                  <h2 className="Cormorant mb-2 uppercase text-2xl sm:text-3xl font-bold">
                     Dispossible Vape
                   </h2>
                   <p className="mb-6 max-w-xs">
@@ -109,7 +109,7 @@ const HomePage = () => {
               className="border-none w-full min-h-[70vh]"
               allowFullScreen=""
               loading="lazy"
-              // referrerpolicy="no-referrer-when-downgrade"
+            // referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </section>

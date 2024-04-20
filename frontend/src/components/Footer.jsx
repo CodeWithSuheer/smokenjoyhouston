@@ -14,12 +14,10 @@ const Footer = () => {
             {/* LOGO & HEADING */}
             <div className="sm:col-span-2">
               <h1 className="max-w-lg text-xl font-semibold tracking-tight text-white xl:text-2xl">
-                SMOKEN JOY HOUSTON
+                SMOKENJOY
               </h1>
-              <p className="max-w-md mt-3">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Architecto, itaque! Reiciendis officiis, quo quaerat provident
-                expedita dignissimos cum nihil enim?
+              <p className="max-w-md text-sm mt-3">
+                Welcome to Smokenjoy, where every puff is a journey. Elevate your experience with our premium selection of vaping and smoking essentials today. Explore a world of flavors, craftsmanship, and satisfaction. Let Smokenjoy be your companion in creating unforgettable smoking moments. Start your journey with us now!
               </p>
             </div>
 
@@ -94,7 +92,7 @@ const Footer = () => {
 
           {/* FOOTER BOTTOM PART  */}
           <div className="text-sm py-8 px-4 md:px-10 border-t text-center text-white">
-            <p>Copyrights © 2024 All Rights Reserved by SmokeNJoy</p>
+            <p>Copyrights © 2024 All Rights Reserved by SMOKENJOY</p>
           </div>
         </div>
       </footer>

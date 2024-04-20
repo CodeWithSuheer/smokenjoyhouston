@@ -45,10 +45,10 @@ const Carousel = () => {
 
             {/* TEXT FOR DESKTOP VIEW */}
             <div className="content hidden sm:block absolute z-50 top-1/2 md:left-[21rem] transform -translate-x-1/2 -translate-y-1/2 text-white">
-              <h2 className="mb-6 text-xl md:text-5xl font-semibold">
+              <h2 className="Cormorant mb-3 text-xl md:text-5xl font-semibold">
                 SMOKENJOY
               </h2>
-              <p className="mb-8 w-full md:max-w-md text-md">
+              <p className="Commissioner mb-8 w-full md:max-w-md text-md">
                 Discover Houston's premier destination for smoke and vape
                 products! From premium e-liquids to top-of-the- line vape
                 devices, we've got everything you need.

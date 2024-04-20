@@ -31,18 +31,7 @@ const AboutUs = () => {
               About SmokEnjoy
             </h1>
             <p className="mb-6 leading-relaxed">
-              Welcome to SmokEnjoy, your dependable resource for help with
-              academic writing. We take great pride in being a dependable
-              supplier of superior academic services. You will receive
-              professional advice and help from our team of seasoned
-              professionals with advanced degrees in a range of disciplines.
-            </p>
-            <p className="mb-6 leading-relaxed">
-              We at SmokEnjoy are aware of the difficulties students have while
-              pursuing their academic goals. Because of this, we provide
-              thorough and reasonably priced academic support that is catered to
-              your needs. Our main objective is to provide outstanding results
-              and support your academic progress.
+              At Smokenjoy, we believe that the pleasure of smoking should be matched by the joy of discovery. Founded with a passion for providing high-quality smoking products, we curate an exquisite collection that caters to the diverse preferences of our customers. Whether you're a seasoned vape enthusiast, a hookah connoisseur, or someone exploring the world of smoking alternatives, Smokenjoy is your ultimate destination for premium smoking experiences.
             </p>
           </div>
         </div>
@@ -56,13 +45,7 @@ const AboutUs = () => {
             <TbTargetArrow className="mx-auto" size={50} />
             <h2 className="mt-3 text-4xl font-semibold ">Our Mission</h2>
             <p className="mt-3 font-light">
-              Our goal at SmokEnjoy is to empower students by offering them
-              dependable, convenient, and excellent academic support. In order
-              to help students achieve academic success and overcome obstacles
-              in their educational journey, we work hard to earn their trust as
-              a partner. Our goal is to provide a welcoming environment where
-              people can work together to advance learning, excellence, and
-              growth.
+              Our mission is simple yet profound - to elevate your smoking experience to new heights. We strive to offer the finest selection of vape devices, hookahs, disposable vapes, e-cigarettes, and e-liquids, ensuring that every puff is an indulgence in luxury and satisfaction. At Smokenjoy, we're committed to delivering not just products but experiences that leave a lasting impression.
             </p>
           </div>
 
@@ -75,14 +58,7 @@ const AboutUs = () => {
             />
             <h2 className="mt-3 text-4xl font-semibold">Our Vision</h2>
             <p className="mt-3 font-light">
-              At SmokEnjoy, our mission is to be the premier academic help
-              company, known for our dedication to student success and unmatched
-              level of customer care. We picture a day when students from all
-              backgrounds may get dependable, inexpensive academic support,
-              enabling them to fulfil their educational aspirations. We hope to
-              have a beneficial influence on students’ lives all around the
-              world by assisting them in realizing their full potential and
-              succeeding in their academic endeavors.
+              Our vision at Smokenjoy is to revolutionize the smoking industry by providing innovative and cutting-edge products that redefine the way people experience smoking. We aim to become the ultimate destination for smokers, offering a diverse range of premium vaping and smoking essentials. Our vision encompasses creating a community of passionate smokers who embrace new technologies and flavors, elevating their smoking lifestyle to unprecedented levels of enjoyment and satisfaction.
             </p>
           </div>
         </div>
@@ -93,21 +69,10 @@ const AboutUs = () => {
         <div className="max-w-6xl mx-auto flex px-5 py-10 sm:py-20 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 xl:pr-16 lg:pr-20 md:pr-16 flex flex-col text-left">
             <h1 className="mb-3 sm:mb-5 font-bold max-w-md text-3xl md:text-4xl text-[#272727]">
-              About SmokEnjoy
+              Customer-Centric Approach
             </h1>
             <p className="mb-6 leading-relaxed">
-              Welcome to SmokEnjoy, your dependable resource for help with
-              academic writing. We take great pride in being a dependable
-              supplier of superior academic services. You will receive
-              professional advice and help from our team of seasoned
-              professionals with advanced degrees in a range of disciplines.
-            </p>
-            <p className="mb-6 leading-relaxed">
-              We at SmokEnjoy are aware of the difficulties students have while
-              pursuing their academic goals. Because of this, we provide
-              thorough and reasonably priced academic support that is catered to
-              your needs. Our main objective is to provide outstanding results
-              and support your academic progress.
+              At Smokenjoy, our customers are at the heart of everything we do. We value your feedback, preferences, and suggestions, using them to continually enhance our product offerings and services. Our dedicated team is always ready to assist you in finding the perfect smoking companion, answering your queries, and ensuring a seamless shopping experience from start to finish.
             </p>
           </div>
 

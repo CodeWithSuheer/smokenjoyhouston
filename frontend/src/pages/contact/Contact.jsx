@@ -23,14 +23,14 @@ const Contact = () => {
   // HANDLE SUBMIT
   const handleSubmit = (e) => {
     e.preventDefault();
-      dispatch(createQueryAsync(formdata)).then(() =>
-        setFormdata({
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
-        })
-      );
+    dispatch(createQueryAsync(formdata)).then(() =>
+      setFormdata({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      })
+    );
   };
 
   return (
@@ -63,18 +63,18 @@ const Contact = () => {
                 <p className="flex items-start -mx-2">
                   <FaPhoneAlt size={22} className="" />
                   <a
-                    href="tel:+1-281-607-5120"
+                    href="tel:+1-713-497-5276"
                     className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400"
                   >
-                    +1 (281) 607-5120
+                    +1 (713) 497-5276
                   </a>
                 </p>
 
                 <p className="flex items-start -mx-2">
                   <AiOutlineMail size={22} className="" />
                   <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">
-                    <a href="mailto:info@octatechsolution.com" target="_blank">
-                      info@octatechsolution.com
+                    <a href="mailto:info@smokenjoyhoustons.com" target="_blank">
+                      info@smokenjoyhoustons.com
                     </a>
                   </span>
                 </p>
@@ -83,23 +83,9 @@ const Contact = () => {
               <div className="mt-6 md:mt-8">
                 <h3 className="text-gray-600 dark:text-gray-300 ">Follow us</h3>
                 <div className="flex mt-4 -mx-1.5">
+
                   <a
-                    href="https://www.linkedin.com/company/octa-tech-solutionn"
-                    target="_blank"
-                  >
-                    <FaLinkedin
-                      size={22}
-                      className="mr-5 cursor-pointer text-gray-500 hover:text-[#0073AF]"
-                    />
-                  </a>
-                  <a href="#" target="_blank">
-                    <BsInstagram
-                      size={22}
-                      className="mr-5 cursor-pointer text-gray-500 hover:text-[#E83274]"
-                    />
-                  </a>
-                  <a
-                    href="https://www.facebook.com/people/Octa-Tech-Solution/61557413701455/"
+                    href="https://www.facebook.com/smokejoyhouston"
                     target="_blank"
                   >
                     <FaFacebookF
@@ -107,15 +93,7 @@ const Contact = () => {
                       className="mr-5 cursor-pointer text-gray-500 hover:text-[#1C9CEA]"
                     />
                   </a>
-                  <a
-                    href="https://www.youtube.com/@octatechsolution"
-                    target="_blank"
-                  >
-                    <IoLogoYoutube
-                      size={22}
-                      className="mr-5 cursor-pointer text-gray-500 hover:text-[#FF0000]"
-                    />
-                  </a>
+
                 </div>
               </div>
             </div>
@@ -216,7 +194,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section >
     </>
   );
 };

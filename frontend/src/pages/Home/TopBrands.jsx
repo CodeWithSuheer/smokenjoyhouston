@@ -8,7 +8,7 @@ const TopBrands = () => {
           {/* BRANDS */}
           <section className="">
             <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-              <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-white md:text-4xl">
+              <h2 className="Cormorant mb-8 lg:mb-16 text-3xl font-extrabold leading-tight text-center text-white md:text-5xl uppercase">
                 Top Brands
               </h2>
               {/* GRID */}

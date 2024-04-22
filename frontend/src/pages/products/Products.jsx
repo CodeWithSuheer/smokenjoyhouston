@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { categories } from "../../Data/index";
 import { products } from "../../Data/index";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 // fadeInAnimationVariants
 const fadeInAnimationVariants = {
@@ -19,15 +19,29 @@ const fadeInAnimationVariants = {
 };
 
 const Products = () => {
+  const categoriesContainerRef = useRef(null);
   const [filteredProducts, setFilteredProducts] = useState([]);
+
   const handleFiltering = (categoryId) => {
-    const filtered = products.filter(product => product.categoryId === categoryId);
+    const filtered = products.filter(
+      (product) => product.categoryId === categoryId
+    );
     setFilteredProducts(filtered);
+
+    // Scroll to the 'shop' section
+    const shopSection = document.getElementById("shop");
+    if (shopSection) {
+      shopSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
+
   return (
     <>
       {/* MAIN CATEGORIES */}
-      <section id="shop" className="py-10 px-5 lg:px-0 min-h-[80vh]">
+      <section
+        ref={categoriesContainerRef}
+        className="py-10 px-5 lg:px-0 min-h-[80vh]"
+      >
         <div className="max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto">
           {/* HEADER */}
           <div className="flex items-center justify-center xl:justify-start">
@@ -42,32 +56,32 @@ const Products = () => {
             <div className="mx-auto max-w-2xl py-4 lg:py-6 sm:px-6 sm:py-6 lg:max-w-full lg:px-5 xl:px-0">
               <div className="mt-4 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                 {categories?.map((category, index) => (
-                  <div
-                    // variants={fadeInAnimationVariants}
-                    // initial="initial"
-                    // whileInView="animate"
-                    // viewport={{ once: true }}
-                    // custom={index}
+                  <motion.div
+                    variants={fadeInAnimationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    custom={index}
                     key={index}
                     className="group relative mt-1"
                   >
                     <button onClick={() => handleFiltering(category.id)}>
-                    <div  className=" w-full cursor-pointer border border-gray-300 overflow-hidden rounded-md bg-gray-200 h-40 md:h-60 lg:h-80">
-                      <img
-                        src={category?.image}
-                        alt="product"
-                        className="h-full w-full object-cover object-center lg:h-full lg:w-full transition duration-500 group-hover:scale-105"
-                      />
-                    </div>
-                    <div className="mt-2 lg:mt-3 flex justify-start">
-                      <div>
-                        <h3 className="pl-2 sm:pl-0 text-sm md:text-md lg:text-lg font-medium text-black cursor-pointer">
-                          {category.name}
-                        </h3>
+                      <div className=" w-full cursor-pointer border border-gray-300 overflow-hidden rounded-md bg-gray-200 h-40 md:h-60 lg:h-80">
+                        <img
+                          src={category?.image}
+                          alt="product"
+                          className="h-full w-full object-cover object-center lg:h-full lg:w-full transition duration-500 group-hover:scale-105"
+                        />
                       </div>
-                    </div>
+                      <div className="mt-2 lg:mt-3 flex justify-start">
+                        <div>
+                          <h3 className="pl-2 sm:pl-0 text-sm md:text-md lg:text-lg font-medium text-black cursor-pointer">
+                            {category.name}
+                          </h3>
+                        </div>
+                      </div>
                     </button>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -92,24 +106,26 @@ const Products = () => {
           <div className="">
             <div className="mx-auto max-w-2xl py-4 lg:py-6 sm:px-6 sm:py-6 lg:max-w-full lg:px-5 xl:px-0">
               <div className="mt-4 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                {(filteredProducts.length ? filteredProducts : products)?.map((product, index) => (
-                  <div key={index} className="group relative mt-1">
-                    <div className=" w-full cursor-pointer border border-gray-300 overflow-hidden rounded-md bg-gray-200 h-40 md:h-60 lg:h-80">
-                      <img
-                        src={product?.image}
-                        alt="product"
-                        className="h-full w-full object-cover object-center lg:h-full lg:w-full transition duration-500 group-hover:scale-105"
-                      />
-                    </div>
-                    <div className="mt-2 lg:mt-3 flex justify-start">
-                      <div>
-                        <h3 className="pl-2 sm:pl-0 text-sm md:text-md lg:text-lg font-medium text-black cursor-pointer">
-                          {product.name}
-                        </h3>
+                {(filteredProducts.length ? filteredProducts : products)?.map(
+                  (product, index) => (
+                    <div key={index} className="group relative mt-1">
+                      <div className=" w-full cursor-pointer border border-gray-300 overflow-hidden rounded-md bg-gray-200 h-40 md:h-60 lg:h-80">
+                        <img
+                          src={product?.image}
+                          alt="product"
+                          className="h-full w-full object-cover object-center lg:h-full lg:w-full transition duration-500 group-hover:scale-105"
+                        />
+                      </div>
+                      <div className="mt-2 lg:mt-3 flex justify-start">
+                        <div>
+                          <h3 className="pl-2 sm:pl-0 text-sm md:text-md lg:text-lg font-medium text-black cursor-pointer">
+                            {product.name}
+                          </h3>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  )
+                )}
               </div>
             </div>
           </div>

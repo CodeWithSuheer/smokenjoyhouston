@@ -17,7 +17,6 @@ const fadeInAnimationVariants = {
 };
 
 const HomeProducts = () => {
-
   return (
     <>
       <section id="shop" className="py-10 px-5 lg:px-0 min-h-[80vh]">
@@ -62,13 +61,14 @@ const HomeProducts = () => {
                     </div>
                   </motion.div>
                 ))}
-
               </div>
             </div>
           </div>
+
           {/* <div className="products">
             <div className="mx-auto max-w-2xl py-4 lg:py-6 sm:px-6 sm:py-6 lg:max-w-full lg:px-5 xl:px-0">
-              <div className="mt-4 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 xl:gap-x-8">
+              <div className="mt-4 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                <div className=" w-full overflow-hidden h-40 md:h-60 lg:h-80"></div>
                 {categories?.slice(4, 6).map((product, index) => (
                   <motion.div
                     variants={fadeInAnimationVariants}
@@ -79,23 +79,24 @@ const HomeProducts = () => {
                     key={index}
                     className="group relative mt-1"
                   >
-                    <div className=" w-full cursor-pointer border border-gray-300 overflow-hidden rounded-md bg-gray-200 h-40 lg:h-80">
+                    <div className=" w-full cursor-pointer border border-gray-300 overflow-hidden rounded-md bg-gray-200 h-40 md:h-60 lg:h-80">
                       <img
                         src={product?.image}
-                        alt="product"
+                        alt="categories"
+                        loading="lazy"
                         className="h-full w-full object-cover object-center lg:h-full lg:w-full transition duration-500 group-hover:scale-105"
                       />
                     </div>
                     <div className="mt-2 lg:mt-3 flex justify-center">
                       <div>
-                        <h3 className="pl-2 sm:pl-0 text-md lg:text-lg font-semibold text-black cursor-pointer">
-                          {product.name}
+                        <h3 className="pl-2 sm:pl-0 text-sm md:text-md lg:text-lg font-medium text-black cursor-pointer">
+                          {product?.name}
                         </h3>
                       </div>
                     </div>
                   </motion.div>
                 ))}
-
+                <div className="w-full overflow-hidden h-40 md:h-60 lg:h-80"></div>
               </div>
             </div>
           </div> */}

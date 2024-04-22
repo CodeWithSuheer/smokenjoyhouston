@@ -1,7 +1,23 @@
 import { accessories } from "../../Data/index";
-import { products } from "../../Data/index";
+import { motion } from "framer-motion";
+import { AccessoriesData } from "../../Data/AccessoriesData";
 
 const Accessories = () => {
+  // fadeInAnimationVariants
+  const fadeInAnimationVariants = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: (index) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.15 * index,
+      },
+    }),
+  };
+
   return (
     <>
       {/* MAIN CATEGORIES */}
@@ -20,7 +36,15 @@ const Accessories = () => {
             <div className="mx-auto max-w-2xl py-4 lg:py-6 sm:px-6 sm:py-6 lg:max-w-full lg:px-5 xl:px-0">
               <div className="mt-4 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                 {accessories?.map((product, index) => (
-                  <div key={index} className="group relative mt-1">
+                  <motion.div
+                    variants={fadeInAnimationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    custom={index}
+                    key={index}
+                    className="group relative mt-1"
+                  >
                     <div className=" w-full cursor-pointer border border-gray-300 overflow-hidden rounded-md bg-gray-200 h-40 md:h-60 lg:h-80">
                       <img
                         src={product?.image}
@@ -35,7 +59,7 @@ const Accessories = () => {
                         </h3>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -60,7 +84,7 @@ const Accessories = () => {
           <div className="">
             <div className="mx-auto max-w-2xl py-4 lg:py-6 sm:px-6 sm:py-6 lg:max-w-full lg:px-5 xl:px-0">
               <div className="mt-4 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                {products?.map((product, index) => (
+                {AccessoriesData?.map((product, index) => (
                   <div key={index} className="group relative mt-1">
                     <div className=" w-full cursor-pointer border border-gray-300 overflow-hidden rounded-md bg-gray-200 h-40 md:h-60 lg:h-80">
                       <img

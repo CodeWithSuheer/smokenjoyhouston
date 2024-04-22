@@ -1,44 +1,42 @@
-import cat_1 from "../../public/cat_1.webp";
-import cat_2 from "../../public/cat_2.webp";
-import cat_3 from "../../public/cat_3.webp";
-import cat_4 from "../../public/cat_4.webp";
-import cat_5 from "../../public/cat_5.webp";
-import cat_6 from "../../public/cat_6.webp";
-
+import cat_1 from "../images//cat_1.webp";
+import cat_2 from "../images//cat_2.webp";
+import cat_3 from "../images//cat_3.webp";
+import cat_4 from "../images//cat_4.webp";
+import cat_5 from "../images//cat_5.webp";
+import cat_6 from "../images//cat_6.webp";
 
 const categories = [
   {
     id: 1,
     name: "E-Cigarettes",
-    image: cat_1
+    image: cat_1,
   },
   {
     id: 2,
     name: "E-Liquids",
-    image: cat_2
+    image: cat_2,
   },
   {
     id: 3,
     name: "Hookah & Sheesha",
-    image: cat_3
+    image: cat_3,
   },
   {
     id: 4,
     name: "Disposable Vape",
-    image: cat_4
+    image: cat_4,
   },
   {
     id: 5,
     name: "Kratom",
-    image: cat_5
+    image: cat_5,
   },
   {
     id: 6,
     name: "Delta 8",
-    image: cat_6
-  }
+    image: cat_6,
+  },
 ];
-
 
 // const categories = [
 //   {

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { categories } from "../../Data/index";
+import { products } from "../../Data/index";
 
 // fadeInAnimationVariants
 const fadeInAnimationVariants = {
@@ -16,7 +17,7 @@ const fadeInAnimationVariants = {
   }),
 };
 
-const HomeProducts = ({ homeData }) => {
+const HomeProducts = () => {
 
   return (
     <>
@@ -48,9 +49,9 @@ const HomeProducts = ({ homeData }) => {
                     <div className=" w-full cursor-pointer border border-gray-300 overflow-hidden rounded-md bg-gray-200 h-40 md:h-60 lg:h-80">
                       <img
                         src={product?.image}
-                        // data-src={product?.image}
                         alt="categories"
-                        className="h-full w-full object-cover object-center lg:h-full lg:w-full transition duration-500 group-hover:scale-105 lazyload"
+                        loading="lazy"
+                        className="h-full w-full object-cover object-center lg:h-full lg:w-full transition duration-500 group-hover:scale-105"
                       />
                     </div>
                     <div className="mt-2 lg:mt-3 flex justify-center">

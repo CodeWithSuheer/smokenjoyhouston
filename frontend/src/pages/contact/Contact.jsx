@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa6";
@@ -17,6 +17,12 @@ const Contact = () => {
     phoneNumber: "",
     message: "",
   });
+
+
+  useEffect(() => {
+    dispatch(createQueryAsync())
+  }, [])
+
 
   const { isLoading } = useSelector((state) => state.queries);
 

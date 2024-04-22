@@ -1,83 +1,79 @@
-import cat_1 from "../../public/cat_1.png";
-import cat_2 from "../../public/cat_2.png";
-import cat_3 from "../../public/cat_3.png";
-import cat_4 from "../../public/cat_4.png";
-import cat_5 from "../../public/cat_5.png";
-import cat_6 from "../../public/cat_6.png";
+import cat_1 from "../../public/cat_1.webp";
+import cat_2 from "../../public/cat_2.webp";
+import cat_3 from "../../public/cat_3.webp";
+import cat_4 from "../../public/cat_4.webp";
+import cat_5 from "../../public/cat_5.webp";
+import cat_6 from "../../public/cat_6.webp";
+
 
 const categories = [
   {
     id: 1,
     name: "E-Cigarettes",
-    image: cat_1,
-    placeholder: "https://placehold.co/400",
+    image: cat_1
   },
   {
     id: 2,
     name: "E-Liquids",
-    image: cat_2,
-    placeholder: "https://placehold.co/400",
+    image: cat_2
   },
   {
     id: 3,
     name: "Hookah & Sheesha",
-    image: cat_3,
-    placeholder: "https://placehold.co/400",
+    image: cat_3
   },
   {
     id: 4,
     name: "Disposable Vape",
-    image: cat_4,
-    placeholder: "https://placehold.co/400",
+    image: cat_4
   },
   {
     id: 5,
     name: "Kratom",
-    image: cat_5,
-    placeholder: "https://placehold.co/400",
+    image: cat_5
   },
   {
     id: 6,
     name: "Delta 8",
-    image: cat_6,
-    placeholder: "https://placehold.co/400",
+    image: cat_6
   }
 ];
+
 
 // const categories = [
 //   {
 //     id: 1,
 //     name: "E-Cigarettes",
 //     image:
-//       "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/vaping-device-e-cigarette.jpg?v=1713478799",
+//       "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/cat_1.webp?v=1713735360",
 //   },
 //   {
 //     id: 2,
 //     name: "E-Liquids",
 //     image:
-//       "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/860_main_vapeliquids.gif?v=1713478797",
+//       "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/cat_2.webp?v=1713735353",
 //   },
 //   {
 //     id: 3,
 //     name: "Hookah & Sheesha",
 //     image:
-//       "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/istockphoto-626155034-612x612.jpg?v=1713479211",
+//       "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/cat_3.webp?v=1713735352",
 //   },
 //   {
 //     id: 4,
 //     name: "Disposable Vape",
 //     image:
-//       "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/image_1024.jpg?v=1713478797",
+//       "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/cat_4.webp?v=1713735350",
 //   },
 //   {
 //     id: 5,
 //     name: "Kratom",
-//     image: "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/360_F_443419933_HmlqPjJeCLYgpKj3YMhVU5SsecI4EjV4.jpg?v=1713551494"
+//     image: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/cat_5.webp?v=1713735350"
 //   },
 //   {
 //     id: 6,
 //     name: "Delta 8",
-//     image: "https://cdn.shopify.com/s/files/1/0649/1399/8024/files/3e3ad9_8acd633b4703474ba0947193e852582e_mv2.webp?v=1713551624"
+//     image: "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/cat_6.webp?v=1713735360"
 //   }
 // ];
 

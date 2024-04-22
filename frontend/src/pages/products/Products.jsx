@@ -36,12 +36,12 @@ const Products = () => {
             <div className="mx-auto max-w-2xl py-4 lg:py-6 sm:px-6 sm:py-6 lg:max-w-full lg:px-5 xl:px-0">
               <div className="mt-4 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                 {categories?.map((product, index) => (
-                  <motion.div
-                    variants={fadeInAnimationVariants}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{ once: true }}
-                    custom={index}
+                  <div
+                    // variants={fadeInAnimationVariants}
+                    // initial="initial"
+                    // whileInView="animate"
+                    // viewport={{ once: true }}
+                    // custom={index}
                     key={index}
                     className="group relative mt-1"
                   >
@@ -54,12 +54,12 @@ const Products = () => {
                     </div>
                     <div className="mt-2 lg:mt-3 flex justify-start">
                       <div>
-                      <h3 className="pl-2 sm:pl-0 text-sm md:text-md lg:text-lg font-medium text-black cursor-pointer">
+                        <h3 className="pl-2 sm:pl-0 text-sm md:text-md lg:text-lg font-medium text-black cursor-pointer">
                           {product.name}
                         </h3>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </div>

@@ -61,6 +61,10 @@ const Carousel = () => {
               >
                 <span>SHOP NOW</span>
               </Link>
+
+              {/* <Link to='/products'
+                className="px-7 py-2 font-medium border-2 border-white hover:bg-gray-100 hover:text-gray-800 transition-colors cursor-pointer"
+              > */}
             </div>
 
             {/* TEXT FOR MOBILE VIEW */}

@@ -27,7 +27,7 @@ const Content = () => {
                 </p>
 
                 <Link
-                  to="/products"
+                  to="/accessories"
                   onClick={() => window.scroll(0, 0)}
                   className="px-7 py-2 mt-3 lg:mt-5 font-medium border-2 border-[#252525] hover:bg-[#252525] hover:text-white transition-colors"
                 >

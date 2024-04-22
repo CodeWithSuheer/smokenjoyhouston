@@ -1,8 +1,9 @@
 import { useRef, useState } from "react";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 const Carousel = () => {
   const [slidesToShow] = useState(1);
@@ -51,7 +52,7 @@ const Carousel = () => {
                 devices, we've got everything you need.
               </p>
 
-              <Link
+              {/* <Link
                 to="shop"
                 spy={true}
                 smooth={true}
@@ -60,21 +61,20 @@ const Carousel = () => {
                 className="px-7 py-2 font-medium border-2 border-white hover:bg-gray-100 hover:text-gray-800 transition-colors cursor-pointer"
               >
                 <span>SHOP NOW</span>
-              </Link>
+              </Link> */}
 
-              {/* <Link to='/products'
+              <Link
+                to="/products"
                 className="px-7 py-2 font-medium border-2 border-white hover:bg-gray-100 hover:text-gray-800 transition-colors cursor-pointer"
-              > */}
+              >
+                <span>SHOP NOW</span>
+              </Link>
             </div>
 
             {/* TEXT FOR MOBILE VIEW */}
             <div className="content sm:hidden absolute z-50 left-1/2 bottom-10 transform -translate-x-1/2 text-white">
               <Link
-                to="shop"
-                spy={true}
-                smooth={true}
-                duration={700}
-                type="button"
+                to="/products"
                 className="px-7 py-2 font-medium border-2 border-white hover:bg-gray-100 hover:text-gray-800 transition-colors cursor-pointer"
               >
                 <span>SHOP NOW</span>

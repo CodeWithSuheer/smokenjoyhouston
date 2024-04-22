@@ -1,43 +1,13 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import Content from "./Content";
-import { motion } from "framer-motion";
 import HomeProducts from "./HomeProducts";
 import Stats from "./Stats";
 import TopBrands from "./TopBrands";
 import HomeSlider from "./HomeSlider";
 import OurBlog from "./OurBlog";
 import CategorySec from "./CategorySec";
-import { categories } from "../../Data/index";;
-import { products } from "../../Data/index";;
-import { accessories } from "../../Data/index";;
 import "./Home.css";
 
 const HomePage = () => {
-
-  // Preload images
-  useEffect(() => {
-    categories.forEach((product) => {
-      const img = new Image();
-      img.src = product?.image;
-    });
-  }, []);
-
-  // fadeInAnimationVariants
-  const fadeInAnimationVariants = {
-    initial: {
-      opacity: 0,
-      y: 100,
-    },
-    animate: (index) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: 0.15 * index,
-      },
-    }),
-  };
-
   return (
     <>
       <main>
@@ -70,11 +40,11 @@ const HomePage = () => {
               className="border-none w-full min-h-[70vh]"
               allowFullScreen=""
               loading="lazy"
-            // referrerpolicy="no-referrer-when-downgrade"
+              // referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </section>
-      </main >
+      </main>
     </>
   );
 };

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { categories } from "../../Data/index";
-import { products } from "../../Data/index";
 
 // fadeInAnimationVariants
 const fadeInAnimationVariants = {

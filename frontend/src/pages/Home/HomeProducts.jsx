@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { categories } from "../../Data/index";
+import { useNavigate } from "react-router-dom";
 
 // fadeInAnimationVariants
 const fadeInAnimationVariants = {
@@ -17,6 +18,14 @@ const fadeInAnimationVariants = {
 };
 
 const HomeProducts = () => {
+  const navigate = useNavigate();
+
+
+
+  const handleProduct = () => {
+    navigate('/products');
+    window.scrollTo(0, 0);
+  }
   return (
     <>
       <section id="shop" className="py-10 px-5 lg:px-0 min-h-[80vh]">
@@ -43,8 +52,9 @@ const HomeProducts = () => {
                     custom={index}
                     key={index}
                     className="group relative mt-1"
+
                   >
-                    <div className=" w-full cursor-pointer border border-gray-300 overflow-hidden rounded-md bg-gray-200 h-40 md:h-60 lg:h-80">
+                    <div onClick={handleProduct} className=" w-full cursor-pointer border border-gray-300 overflow-hidden rounded-md bg-gray-200 h-40 md:h-60 lg:h-80">
                       <img
                         src={product?.image}
                         alt="categories"
@@ -101,7 +111,7 @@ const HomeProducts = () => {
             </div>
           </div> */}
         </div>
-      </section>
+      </section >
     </>
   );
 };
